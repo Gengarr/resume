@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="header">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Это сайт - резюме Дмитрия Козляка">
+    <link rel="stylesheet" href="styles.css">
     <title>Dzmitry Resume</title>
 </head>
 <body>
-<img src="avatar.jpg" alt="Фото Дмитрия Козляка" width="200">
+<div class="container">
+    <div class="info">
+    <img src="avatar.jpg" alt="Фото Дмитрия Козляка" class="avatar">
+        <div class="info-text">
+        <h1>Козляк Дмитрий</h1>
+        
+        <p>Я <strong>программист</strong> html и css. Пишу только <strong>качественный</strong> код.</p>
 
-    <h1>Козляк Дмитрий</h1>
-    
-    <p>Я <strong>программист</strong> html и css. Пишу только <strong>качественный</strong> код.</p>
+        <p>Сейчас открыт для <em>реализации</em> проектов. Работаю под <em>ключ</em> по <em>договору</em>.</p>
 
-    <p>Сейчас открыт для <em>реализации</em> проектов. Работаю под <em>ключ</em> по <em>договору</em>.</p>
+        <h4>Список социальных сетей:</h4>
 
-    <h4>Список социальных сетей:</h4>
-
-    <a href="https://www.instagram.com/dzmitry_kazliak/" target="_blank">Instagram</a>
-    |
-    <a href="https://t.me/Gengar987" target="_blank">Telegram</a>
-    |
-    <a href="https://vk.com/id1626286" target="_blank">Vkontakte</a>
-
-    <h2>Мои хобби:</h2>
-
-    <ol>
-        <li>Люблю программировать.</li>
-        <li>Люблю путешевствовать.</li>
-        <li>Люблю обучаться новому.</li>
-        <li>Люблю слушать музыку.</li>
-        <li>Люблю головоломки.</li>
-    </ol>
-
-    <h2>Мои хобби:</h2>
-
-<table>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-<tbody>
-     <tr>
-        <td>ИП</td>
-        <td>Директор</td>
-        <td>2014 - сейчас</td>
-     </tr>
-</tbody>
-<tbody>
-     <tr>
-        <td>Специалист по созданию сайтов</td>
-        <td>Создание сайтов</td>
-        <td>2015 - сейчас</td>
-     </tr>
-</tbody>
-<tbody>
-     <tr>
-        <td>Специалист по настройке рекламы</td>
-        <td>Настройка рекламы</td>
-        <td>2015 - сейчас</td>
-     </tr>
-</tbody>
-<tbody>
-     <tr>
-        <td>Менеджер по продажам</td>
-        <td>Продажи строительного и садового товара</td>
-        <td>2015 - сейчас</td>
-     </tr>
-</tbody>
-</table>
-<h2>Связаться со мной</h2>
-<form action="/">
-    <div>
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите имя">
+        <a href="https://www.instagram.com/dzmitry_kazliak/" target="_blank">Instagram</a>
+        |
+        <a href="https://t.me/Gengar987" target="_blank">Telegram</a>
+        |
+        <a href="https://vk.com/id1626286" target="_blank">Vkontakte</a>
     </div>
-    <div>
-        <label for="email">Ваш email</label>
-        <input type="email" id="email" placeholder="Введите email">
     </div>
-    <div>
-        <label for="message">Ваше сообщение</label>
-        <br>
-        <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+    <div class="card bg-green">
+        <h2>Мои хобби:</h2>
+        <ol>
+            <li>Люблю программировать.</li>
+            <li>Люблю путешевствовать.</li>
+            <li>Люблю обучаться новому.</li>
+            <li>Люблю слушать музыку.</li>
+            <li>Люблю головоломки.</li>
+        </ol>
     </div>
-    <input type="submit" width="400px" value="Отправить">
-</form>
+    <div class="card bg-red">
+        <h2>Опыт работы:</h2>
+
+    <table>
+        <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+        </tr>
+    <tbody>
+        <tr>
+            <td>ИП</td>
+            <td>Директор</td>
+            <td>2014 - сейчас</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Специалист по созданию сайтов</td>
+            <td>Создание сайтов</td>
+            <td>2015 - сейчас</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Специалист по настройке рекламы</td>
+            <td>Настройка рекламы</td>
+            <td>2015 - сейчас</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Менеджер по продажам</td>
+            <td>Продажи строительного и садового товара</td>
+            <td>2015 - сейчас</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+    <div class="card bg-yellow">
+    <h2>Мои работы:</h2>
+
+    <ul>
+        <li>
+            <a href="https://baza-24bfba.webflow.io/">Создание Landing Page</a>
+        </li>
+        <li>
+            <a href="https://zelmax.by/">Создание Интернет-магазина</a>
+        </li>
+    </ul>
+    </div>
+
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+
+        <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Ваше сообщение</label>
+            <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+        </div>
+        <input class="btn" type="submit" width="400px" value="Отправить">
+    </form>
+</div>
 </body>
 </html>
